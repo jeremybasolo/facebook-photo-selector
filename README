@@ -1,1 +1,40 @@
-test de readme
+Facebook Photo Selector
+
+--------------------------------------------------
+
+
+Demo: http://www.jeremybasolo.com/fbphotoselector/
+
+Tested on:
+Firefox, Chrome, Safari, IE7, IE8, IE9
+
+
+--------------------------------------------------
+
+
+A sample source code is available in index.html
+
+
+The parameters available are listed below:
+
+- breadcrumb: true or false. Activate or not the breadcrumb. Default value is true.
+
+- backButtonOnTop: true or false. Add a back button on the Photos view above the Photos list. Default value is false.
+
+- backButtonOnBottom: true or false. Add a back button on the Photos view below the Photos list. Default value is true.
+
+- sizeAlbum: 'thumbnail', 'normal' or 'album'. Define the size of the albums list images. Default value is 'thumbnail'.
+
+- sizePhoto: 'thumbnail', 'normal' or 'album'. Define the size of the photos list images. Default value is 'thumbnail'.
+
+- loadingText: any HTML. Define the HTML to display while the content is Loading. Default value is 'Loading...'.
+
+- backText: any HTML. Define the HTML to display for the back button. Default value is 'Back'.
+
+- albumsByPage: any positive integer. Define the number of albums to display by page. If value is 0, no pagination. Default value is 0.
+
+- photosByPage: any positive integer. Define the number of photos to display by page. If value is 0, no pagination. Default value is 0.
+
+- onSelect: Javascript function. Define the function to execute when the user click on a photo. a Json object can be use in that function, containing the id, url and thumbnail url of the photo. 
+  Default value is function(data) { var display = 'Id: ' + data.id + '\n\nLink image: ' + data.image + '\n\nLink thumbnail: ' + data.thumbnail; console.log(display); }
+
