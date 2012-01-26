@@ -36,5 +36,9 @@ The parameters available are listed below:
 - photosByPage: any positive integer. Define the number of photos to display by page. If value is 0, no pagination. Default value is 0.
 
 - onSelect: Javascript function. Define the function to execute when the user click on a photo. a Json object can be use in that function, containing the id, url and thumbnail url of the photo. 
-  Default value is function(data) { var display = 'Id: ' + data.id + '\n\nLink image: ' + data.image + '\n\nLink thumbnail: ' + data.thumbnail; console.log(display); }
+Default value is:
+function(data) { 
+	var display = 'Id: ' + data.id + '\n\nLink image: ' + data.image + '\n\nLink thumbnail: ' + data.thumbnail; 
+	console.log(display); 
+}
 
