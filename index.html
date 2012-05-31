@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>jQuery Facebook Photo Selector by jeremybasolo</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>jQuery Facebook Photo Selector</h1>
+        <p>A simple Facebook photo selector using jQuery, fully customisable with pagination and breadcrumb</p>
+        <p class="view"><a href="https://github.com/jeremybasolo/Facebook-Photo-Selector">View the Project on GitHub <small>jeremybasolo/Facebook-Photo-Selector</small></a></p>
+        <ul>
+          <li><a href="https://github.com/jeremybasolo/Facebook-Photo-Selector/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/jeremybasolo/Facebook-Photo-Selector/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/jeremybasolo/Facebook-Photo-Selector">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <p><strong><a href="http://www.jeremybasolo.com/fbphotoselector/">Click here for a demo</a></strong></p>
+
+<p>Tested on:
+<em>Firefox, Chrome, Safari, IE7, IE8, IE9</em></p>
+
+<p>A sample source code is available in index.html</p>
+
+<p>The parameters available are listed below:</p>
+
+<ul>
+<li>breadcrumb: true or false. Activate or not the breadcrumb. Default value is true.</li>
+<li>backButtonOnTop: true or false. Add a back button on the Photos view above the Photos list. Default value is false.</li>
+<li>backButtonOnBottom: true or false. Add a back button on the Photos view below the Photos list. Default value is true.</li>
+<li>sizeAlbum: 'thumbnail', 'normal' or 'album'. Define the size of the albums list images. Default value is 'thumbnail'.</li>
+<li>sizePhoto: 'thumbnail', 'normal' or 'album'. Define the size of the photos list images. Default value is 'thumbnail'.</li>
+<li>loadingText: any HTML. Define the HTML to display while the content is Loading. Default value is 'Loading...'.</li>
+<li>backText: any HTML. Define the HTML to display for the back button. Default value is 'Back'.</li>
+<li>albumsByPage: any positive integer. Define the number of albums to display by page. If value is 0, no pagination. Default value is 0.</li>
+<li>photosByPage: any positive integer. Define the number of photos to display by page. If value is 0, no pagination. Default value is 0.</li>
+<li>onSelect: Javascript function. Define the function to execute when the user click on a photo. a Json object can be use in that function, containing the id, url and thumbnail url of the photo. 
+Default value is:
+function(data) { 
+var display = 'Id: ' + data.id + '\n\nLink image: ' + data.image + '\n\nLink thumbnail: ' + data.thumbnail; 
+console.log(display); 
+}</li>
+</ul>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/jeremybasolo">jeremybasolo</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
