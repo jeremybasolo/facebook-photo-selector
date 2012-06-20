@@ -41,4 +41,3 @@ function(data) {
 	var display = 'Id: ' + data.id + '\n\nLink image: ' + data.image + '\n\nLink thumbnail: ' + data.thumbnail; 
 	console.log(display); 
 }
-
