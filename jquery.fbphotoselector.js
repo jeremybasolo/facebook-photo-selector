@@ -1,22 +1,6 @@
 /* Facebook Photo Selector */
 (function($) {
   	
-  	// default configuration
-  	$.fn.fbphotoselector.defaults = { 
-  		breadcrumb: true, 
-  		backButtonOnTop: false, 
-  		backButtonOnBottom: true, 
-  		sizeAlbum: 'thumbnail', 
-  		sizePhoto: 'thumbnail', 
-  		loadingText: 'Loading...', 
-  		backText: 'Back',
-  		albumsByPage: 0,
-  		photosByPage: 0,
-  		onSelect: function(data) {
-  			var display = 'Id: ' + data.id + '\n\nLink image: ' + data.image + '\n\nLink thumbnail: ' + data.thumbnail;
-  		}
-  	}
-  	
 	$.fn.fbphotoselector = function(options) {
 		
 		var opts = $.extend({}, $.fn.fbphotoselector.defaults, options);
@@ -297,6 +281,22 @@
 			}
 			
     	});
+  	}
+  	
+  	// default configuration
+  	$.fn.fbphotoselector.defaults = { 
+  		breadcrumb: true, 
+  		backButtonOnTop: false, 
+  		backButtonOnBottom: true, 
+  		sizeAlbum: 'thumbnail', 
+  		sizePhoto: 'thumbnail', 
+  		loadingText: 'Loading...', 
+  		backText: 'Back',
+  		albumsByPage: 0,
+  		photosByPage: 0,
+  		onSelect: function(data) {
+  			var display = 'Id: ' + data.id + '\n\nLink image: ' + data.image + '\n\nLink thumbnail: ' + data.thumbnail;
+  		}
   	}
 
 })(jQuery);
