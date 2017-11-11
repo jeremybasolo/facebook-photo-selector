@@ -42,7 +42,7 @@
 				container.html(opts.loadingText);
 				
 				// query facebook for the users photo albums
-				FB.api('/me/albums?limit=0', function(response) {    
+				FB.api('/me/albums', function(response) {    
 				
 				    // list albums
 				    var ulAlbums = "<ul class='fbAlbums'>";			
@@ -131,7 +131,7 @@
 						container.html(opts.loadingText);
 						
 				    	// get the albums photos
-				    	FB.api('/' + elem.data('id') + '/photos?limit=0', function(response) {
+				    	FB.api('/' + elem.data('id') + '/photos', function(response) {
 				    	
 				    		// get the data
 				    		var photos = response.data;
@@ -259,7 +259,7 @@
 				var ulAlbums = "";
 				ulAlbums = ulAlbums + "<li>";
 					ulAlbums = ulAlbums + "<a href='javascript:void(0);' data-id='"+album.id+"' class='albumLink'>";
-						ulAlbums = ulAlbums + "<img src='https://graph.facebook.com/" + album.cover_photo + "/picture?type=" + opts.sizeAlbum + "&access_token=" + sessionToken + "'>";
+						ulAlbums = ulAlbums + "<img src='https://graph.facebook.com/" + album.id + "/picture?type=" + opts.sizeAlbum + "&access_token=" + sessionToken + "'>";
 						ulAlbums = ulAlbums + "<p>" + album.name + "</p>";
 					ulAlbums = ulAlbums + "</a>";
 				ulAlbums = ulAlbums + "</li>";
