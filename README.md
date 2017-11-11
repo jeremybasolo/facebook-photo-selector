@@ -1,6 +1,6 @@
 # Facebook Photo Selector
 
-**Demo:** http://www.jeremybasolo.com/fbphotoselector/
+**Demo:** https://jeremybasolo.com/demos/fbphotoselector/index.html
 
 Tested on:
 Firefox, Chrome, Safari, IE7, IE8, IE9
